@@ -1,0 +1,40 @@
+.footer {
+    position: absolute;  /* Para dispositivos móviles se debe comentar esta linea*/
+    bottom:0;
+    width:100%;
+    background-color: #1791b8;
+}
+
+.footer p {
+    color: #fff;
+    font-size:.75em;
+    display: inline-block;
+}
+
+#ftr-wrap {
+    display:table;
+    table-layout:fixed;
+    width:100%;
+    margin:0 auto;
+}
+#ftr-wrap > div {
+    display:table-cell;
+    vertical-align:middle;
+    /*outline:1px dashed red;  /* TEST Outline.  TO BE DELETED. */
+}
+#ftr-wrap > div:nth-child(1) {text-align:left;}
+#ftr-wrap > div:nth-child(2) {text-align:center;}
+#ftr-wrap > div:nth-child(3) {text-align:right;}
+
+.ftr-links ul {
+    padding: 0;
+}
+.ftr-links ul li {
+    display: inline-block;
+    padding-right: 15px;
+    font-size:.75em;
+}
+.ftr-links ul li a {
+    color: #fff;
+    margin: 0;
+}
