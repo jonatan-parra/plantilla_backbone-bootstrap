@@ -6,11 +6,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="public/css/menu_navegacion.css">
-    <link rel="stylesheet" href="public/css/footer.css">
-    <link rel="stylesheet" href="public/css/toastr.min.css">
+    <!-- Librerias CSS -->
+    <link rel="stylesheet" href="public/css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/libs/iziToast.min.css">
+
+    <!-- Utilidades CSS -->
+    <link rel="stylesheet" href="public/css/app/menu_navegacion.css">
+    <link rel="stylesheet" href="public/css/app/footer.css">
+
+
   </head>
   <body>
 
@@ -24,21 +28,30 @@
   <!-- Footer-->
   <div id="footer"></div>
 
+  <!-- Librerias JS -->
   <script src="public/js/libs/jquery-3.3.1.min.js"></script>
   <script src="public/js/libs/tether.min.js"></script>
   <script src="public/js/libs/bootstrap.min.js"></script>
   <script src="public/js/libs/fontawesome-all.js"></script>
   <script src="public/js/libs/underscore-min.js"></script>
   <script src="public/js/libs/backbone-min.js"></script>
-  <script src="public/js/libs/toastr.min.js"></script>
-  <script src="public/js/configuracion/notificaciones.js"></script>
+  <script src="public/js/libs/iziToast.min.js"></script>
+
+  <!-- Utilidades JS -->
+  <script src="public/js/utilidades/notificaciones.js"></script>
 
 
   <script>
   $('#menu_navegacion').load('public/templates/menu_navegacion/menu_navegacion.html');
   $('#div_contenido').load('public/templates/contenido/contenido.html');
   $('#footer').load('public/templates/footer/footer_template.html');
-  llamar_notificacion();
+
+
+  colocar_notificacion("Titulo", "Mensaje <br> de varias lineas", "Opensource.png", "mensaje_en_consola", "Ver consola", "success");
+  colocar_notificacion("Titulo", "Mensaje <br> de varias lineas", "Opensource.png", "mensaje_en_consola", "Ver consola", "info");
+  colocar_notificacion("Titulo", "Mensaje <br> de varias lineas", "Opensource.png", "mensaje_en_consola", "Ver consola", "warning");
+  colocar_notificacion("Titulo", "Mensaje <br> de varias lineas", "Opensource.png", "mensaje_en_consola", "Ver consola", "danger");
+  colocar_notificacion("Titulo", "Mensaje <br> de varias lineas", "Opensource.png", "mensaje_en_consola", "Ver consola", "danger1");
   </script>
 
 
